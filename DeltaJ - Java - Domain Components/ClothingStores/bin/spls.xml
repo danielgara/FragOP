@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spls xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../bin/spls.xsd">
+	<spl name="ClothingStores">
+		<features>
+			<feature name ="BasicViewsHtml" />
+			<feature name ="ListOfProducts" />
+			<feature name ="Product" />
+			<feature name ="ProductManager" />
+			<feature name ="Login" />
+		</features>
+		<configurations>
+		</configurations>
+		<deltas>
+			<partition>
+				<modul delta="dHome" when="BasicViewsHtml
+				" />
+			</partition>
+			<partition>
+				<modul delta="dProducts" when="ListOfProducts
+				" />
+			</partition>
+			<partition>
+				<modul delta="dProductManager" when="ProductManager
+				" />
+			</partition>
+			<partition>
+				<modul delta="dLogin" when="Login
+				" />
+			</partition>
+			<partition>
+				<modul delta="dProduct" when="Product
+				" />
+			</partition>
+			<partition>
+				<modul delta="dAlterProducts" when="ListOfProducts AND Product
+				" />
+			</partition>
+			<partition>
+				<modul delta="dAlterProductManager" when="ProductManager AND Product
+				" />
+			</partition>
+		</deltas>
+	</spl>
+</spls>

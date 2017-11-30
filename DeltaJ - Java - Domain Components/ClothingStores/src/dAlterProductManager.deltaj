@@ -1,0 +1,7 @@
+delta dAlterProductManager {
+	modifies controllers.ProductManager {
+		adds import models.Product;
+		removes products;
+		adds List<Product> products = Product.get_all();
+	}
+}
