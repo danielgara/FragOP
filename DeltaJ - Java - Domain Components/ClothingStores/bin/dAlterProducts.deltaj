@@ -1,8 +1,0 @@
-delta dAlterProducts {
-	modifies controllers.Products {
-		adds import models.Product;
-		removes products;
-		adds List<Product> products = Product.get_all();
-	}
-	
-}
