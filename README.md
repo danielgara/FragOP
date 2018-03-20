@@ -1,5 +1,8 @@
 # FragOP
 
+Video:
+- Go to https://www.youtube.com/watch?v=iXwQC088OIc this video contains an example of a product derivation with FragOP and VariaMos
+
 Folders:
 
 - assets: includes the assets used for the preliminary evaluation
